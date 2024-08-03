@@ -175,6 +175,7 @@
 .projectContainers {
   display: flex;
   justify-content: center;
+  width: 100vw;
 }
 .projectContainers img {
   margin-left: 2rem;
@@ -641,6 +642,16 @@
     top: 30%;
   }
 
+  .value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+  }
+  .patentsCompleted p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+  }
   .footercontainer {
     overflow-y: hidden;
   }
