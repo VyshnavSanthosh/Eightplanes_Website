@@ -58,8 +58,8 @@
   transform: translate(-50%, -50%);
 }
 .background img {
-  height: 25rem;
-  width: 100vw;
+  height: auto;
+  width: 100%;
 }
 .heroImg {
   position: absolute;
@@ -94,11 +94,12 @@
   align-items: center;
   justify-content: space-around;
   width: 90%;
-  height: 14.5rem;
+  min-height: 14.5rem;
   background-color: #f9f9f9;
   border-radius: 30px;
   margin-top: 40rem;
   font-family: "Nunito", sans-serif;
+  overflow-y: hidden;
 }
 .milestoneContainermain {
   width: 100vw;
@@ -481,6 +482,7 @@
   justify-content: center;
   align-items: end;
 }
+
 .footerright p {
   font-size: 0.75rem;
   line-height: 2rem;
@@ -494,6 +496,16 @@
     font-size: 4rem;
   }
 
+  .milestoneContainermain {
+    flex-direction: row;
+    height: fit-content;
+  }
+  .milestoneContainer {
+    gap: 3rem;
+    flex-direction: row;
+
+    justify-content: center;
+  }
   .heroimgTxt1 p {
     font-size: 1.3rem;
   }
@@ -501,7 +513,12 @@
   .heroimgTxt2 p {
     display: none;
   }
-
+  .project2 img {
+    margin-top: 1rem;
+  }
+  .project2 {
+    margin-top: 1rem;
+  }
   .projectContainer {
     display: flex;
     flex-direction: column;
@@ -520,6 +537,9 @@
     margin-left: 13%;
   }
 
+  .affiliateHeading h1 {
+    font-size: 2.7rem;
+  }
   .service2 {
     width: 100%;
   }
@@ -529,6 +549,9 @@
     margin-left: 13%;
   }
 
+  .inaugurationContent h1 {
+    font-size: 2rem;
+  }
   .momentsContainer {
     flex-direction: column;
   }
@@ -572,5 +595,13 @@
 
   .mailus {
     font-size: 0.8rem;
+  }
+}
+@media (max-width: 300px) {
+  .affiliateHeading h1 {
+    font-size: 2.3rem;
+  }
+  .clientHeading h1 {
+    font-size: 2.3rem;
   }
 }
