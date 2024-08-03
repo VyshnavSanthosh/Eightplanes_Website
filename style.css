@@ -66,15 +66,18 @@
   font-size: 1.5rem;
   display: none;
 }
-
+.toggle_btn i {
+  height: 40px;
+}
 /* heroPage*/
 * {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   font-family: "Nunito", sans-serif;
 }
-
+.HeroPage {
+  width: 100vw;
+}
 .main {
   font-family: "Nunito", sans-serif;
   font-size: 5rem;
@@ -156,6 +159,7 @@
 .traininghrs {
   display: flex;
   flex-direction: row;
+  text-align: center;
 }
 .value {
   font-size: 4rem;
@@ -173,6 +177,7 @@
 .batchesCompleted {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 .batchesCompleted span {
   color: #16eb9d;
@@ -185,6 +190,9 @@
   font-weight: 800;
   color: black;
 }
+.projectsCompleted {
+  text-align: center;
+}
 .projectsCompleted p {
   font-size: 4rem;
   font-weight: 800;
@@ -195,6 +203,9 @@
   font-weight: 800;
   color: black;
 }
+.patentsCompleted {
+  text-align: center;
+}
 .mlstone {
   font-size: 20px;
   font-weight: 750;
@@ -203,6 +214,14 @@
   display: flex;
   justify-content: center;
   margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.projectsections h1 {
+  font-size: 3.4rem;
+  font-weight: 700;
+}
+.projectsections span {
+  color: #16eb9d;
 }
 .projectContainer {
   display: flex;
@@ -270,41 +289,136 @@
 }
 .servicesPage {
   margin-top: 6rem;
+  min-height: 20vh;
+  background-color: #fff;
 }
 .service {
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
 }
-.serviceContainer {
-  display: flex;
-  justify-content: center;
+.service h1 {
+  font-size: 3.5rem;
 }
-.services {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 80%;
+.service span {
+  color: #16eb9d;
 }
-.service1 {
-  width: 30vw;
+.slide-container {
+  max-width: 1000px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card {
+  border-radius: 25px;
+}
+.image-content,
+.card-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  padding: 10px 14px;
+}
+.card-content span {
+  color: #16eb9d;
+}
+.card-content {
   text-align: center;
 }
-.service2 {
-  width: 30vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay {
+  position: absolute;
+  left: 1rem;
+  top: 2rem;
+  height: 80%;
+  width: 90%;
+  border-radius: 25px 25px 0 25px;
+}
+
+.card-image {
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding: 3px;
+  object-fit: cover;
+}
+.card-image .card-img {
+  height: auto;
+  width: 100%;
+}
+.card-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-position: center;
+}
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+}
+.description {
+  font-size: 14px;
+  color: #707070;
   text-align: center;
 }
-.service1 img {
-  margin-bottom: -2rem;
+.button {
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #16eb9d;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-.service2 img {
-  margin-bottom: -2rem;
+.button:hover {
+  background: #16eb9d;
 }
+
+.swiper-navBtn {
+  color: #16eb9d;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover {
+  color: #16eb9d;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 35px;
+}
+.swiper-button-next {
+  right: 0;
+}
+.swiper-button-prev {
+  left: 0;
+}
+.swiper-pagination-bullet {
+  background-color: #16eb9d;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #16eb9d;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+  .swiper-navBtn {
+    display: none;
+  }
+}
+
 .MomentsPage span {
   color: #16eb9d;
 }
@@ -340,8 +454,10 @@
 .momentsRightSide {
   display: flex;
   justify-content: right;
-  width: 50vw;
+  width: 40vw;
   z-index: 1;
+  position: relative;
+  right: 1rem;
 }
 .momentsRightSide img {
   height: auto;
@@ -723,6 +839,7 @@
     font-size: 2rem;
     font-weight: 700;
     color: black;
+    text-align: center;
   }
   .patentsCompleted p {
     font-size: 2rem;
