@@ -81,14 +81,14 @@ body {
 }
 .main {
   font-family: "Nunito", sans-serif;
-  font-size: 5rem;
+  font-size: 7.5rem;
   font-weight: 700;
   height: 7rem;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 42%;
+  top: 27%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -98,10 +98,10 @@ body {
 .background {
   overflow-x: hidden;
   overflow-y: hidden;
-  height: 22rem;
+  height: 25rem;
   width: 100vw;
   position: absolute;
-  top: 66%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-image: url(assets/We\ Design.png);
@@ -155,6 +155,7 @@ body {
   width: 100vw;
   display: flex;
   justify-content: center;
+  margin-top: 12rem;
 }
 .traininghrs {
   display: flex;
@@ -676,6 +677,9 @@ body {
     font-size: 1rem;
     display: block;
   }
+  .toggle_btn {
+    margin-top: 1rem;
+  }
   .navbar .navbar-links {
     display: none;
   }
@@ -830,6 +834,9 @@ body {
 }
 
 @media (max-width: 450px) {
+  .navbar-brand {
+    margin-left: -3rem;
+  }
   .navbar .toggle_btn {
     margin-right: 3rem;
     color: black;
@@ -849,7 +856,10 @@ body {
     font-size: 3rem;
     top: 30%;
   }
-
+  .toggle_btn {
+    margin-top: 1rem;
+    margin-right: -7rem;
+  }
   .projectContainers {
     margin-left: 1.8rem;
   }
@@ -1020,6 +1030,13 @@ body {
   }
   .main {
     flex-direction: column;
+  }
+  .toggle_btn {
+    margin-top: 1rem;
+    margin-right: -2rem;
+  }
+  .navbar-brand {
+    margin-left: -3rem;
   }
   .background {
     background-image: url(assets/resp.png);
