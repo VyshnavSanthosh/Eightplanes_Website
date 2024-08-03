@@ -70,10 +70,11 @@
   height: 40px;
 }
 /* heroPage*/
-* {
+body {
   margin: 0;
   padding: 0;
   font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
 }
 .HeroPage {
   width: 100vw;
@@ -103,11 +104,10 @@
   top: 66%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-image: url(assets/We\ Design.png);
+  background-size: auto;
 }
-.background img {
-  height: auto;
-  width: 100%;
-}
+
 .heroImg {
   position: absolute;
   top: 79%;
@@ -161,6 +161,9 @@
   flex-direction: row;
   text-align: center;
 }
+.training {
+  text-align: center;
+}
 .value {
   font-size: 4rem;
   font-weight: 800;
@@ -202,6 +205,7 @@
   font-size: 4rem;
   font-weight: 800;
   color: black;
+  margin: 0;
 }
 .patentsCompleted {
   text-align: center;
@@ -313,6 +317,12 @@
   overflow: hidden;
   border-radius: 25px;
 }
+.slide-container,
+.slide-content {
+  overflow-x: auto;
+  position: relative;
+}
+
 .card {
   border-radius: 25px;
 }
@@ -435,6 +445,7 @@
   width: 100vw;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 .momentsLeftSide {
   display: flex;
@@ -442,6 +453,10 @@
   align-items: center;
   width: 50vw;
   z-index: 1;
+}
+.momentsLeftSide img {
+  height: auto;
+  width: 100%;
 }
 .inaugurationContent {
   width: 75%;
@@ -457,7 +472,6 @@
   width: 40vw;
   z-index: 1;
   position: relative;
-  right: 1rem;
 }
 .momentsRightSide img {
   height: auto;
@@ -671,7 +685,6 @@
     justify-content: center;
   }
   .main {
-    font-size: 3rem;
     top: 30%;
   }
 
@@ -696,6 +709,7 @@
   .heroimgTxt1 p {
     font-size: 0.6rem;
     top: 33%;
+    display: none;
   }
   .heroimgTxt2 p {
     display: none;
@@ -744,7 +758,6 @@
   }
 
   .momentsLeftSide {
-    width: 100%;
   }
   .momentsRightSide {
     width: 100%;
@@ -755,7 +768,12 @@
   }
 
   .momentsRightSide img {
-    height: 28rem;
+    height: auto;
+    width: 100%;
+  }
+  .momentsleftSide img {
+    height: auto;
+    width: 100%;
   }
 
   .clients {
@@ -893,6 +911,9 @@
 
   .background {
     top: 45%;
+    background-image: url(assets/resp.png);
+    background-size: auto;
+    background-repeat: no-repeat;
   }
   .service1 {
     width: 100%;
@@ -937,6 +958,9 @@
     height: 28rem;
   }
 
+  .momentsleftSide img {
+    height: 28rem;
+  }
   .clients {
     flex-direction: column;
   }
@@ -993,5 +1017,27 @@
 @media (max-width: 550px) {
   .footercontainer p {
     font-size: 0.5rem;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .background {
+    background-image: url(assets/resp.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .heroimgTxt1,
+  .heroimgTxt2,
+  .main,
+  .heroImg {
+    display: none;
+  }
+  .momentsleftSide img {
+    height: 28rem;
   }
 }
