@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Keania+One&family=Merriweather&family=Montserrat&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sacramento&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    >
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Eight-Planes</title>
+    <title>Document</title>
 </head>
 <body>
-    <div class="navbar">
-        <div class="navbar-brand">
-          <img src="assets/logo.png" alt="" />
+    <div class="circle">
+    </div>
+    <div class="circle_2">
+    </div>
+    <div class="nav">
+        <div class="eplogo">
+            <img src="" alt="" class="logo">
         </div>
-        <div class="navbar-links">
-          <a href="#">Home</a>
-          <a href="#projectsections1">Projects</a>
-          <a href="aboutUs.html">About Us</a>
-          <a href="#contactpage">Contact</a>
+        <div class="list">
+            <p>Home</p>
+            <p>About us</p>
+            <p>Contact us</p>
+            <p class="odd"> Products</p>
         </div>
         <div class="toggle_btn">
-          <i class="fa-solid fa-bars"></i>
-      </div>
+            <i class="fa-solid fa-bars"></i>
+        </div>
 
-      </div>
-
-      <div class="dropdown_menu">
+    </div>
+    <div class="dropdown_menu open">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#projectsections1">Projects</a></li>
-            <li><a href="aboutUs.html">About Us</a></li>
-            <li><a href="#contactpage">Contact</a></li>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Products</li>
         </ul>
-      
-      <script>
+    </div>
+    <script>
         const toggleBtn = document.querySelector('.toggle_btn')
         const toggleBtnIcon = document.querySelector('.toggle_btn i')
         const DropDownMenu = document.querySelector('.dropdown_menu')
@@ -51,260 +51,237 @@
                 ? 'fa-solid fa-xmark'
                 : 'fa-solid fa-bars'
         }
-      </script>
-
-      </div>
-      <!--heroPage-->
-    
-      <div class="HeroPage">
-        <div class="weDesign">
-          <div class="background">
-            <img src="assets/We Design.png" />
-          </div>
-          <div class="heroimgTxt1">
-            <p>Designing the future </p>
-          </div>
-          <div class="heroimgTxt2">
-            <p>One blueprint at a time</p>
-          </div>
-          <div class="heroImg">
-            <img src="assets/heroimg1.png" alt="" />
-          </div>
-          <p class="main">
-            We <span>Design</span>
-          </p>
-        </div>
-      </div>
-      <div class="milestoneContainermain">
-        <div class="milestoneContainer">
-          <div class="training">
-            <div class="traininghrs">
-              <div class="value" akhi="1000">0</div>
+    </script>
+    <div class="main">
+        <h1 class="first_h">About Our Company</h1>
+        <p class="about_p">
+            We are an innovative company specializing in the development 
+            of advanced robotics and educational courses. 
+            They design and manufacture cutting-edge robotic 
+            systems that cater to a wide range of industries,
+             from manufacturing to healthcare.
+        </p>
+        <div class="imgs">
+            <div class="img_1">
 
             </div>
-            <p class="mlstone">Students trained</p>
-          </div>
-          <div class="batches">
-            <div class="batchesCompleted">
-              <div class="value" akhi="50">0</div>
+            <div class="img_2">
+                
             </div>
-            <p class="mlstone">Batches completed</p>
-          </div>
-          <div class="projects">
-            <div class="projectsCompleted">
-              <div class="value" akhi="10">0</div>
+        </div>
+        <div class="bottom_content">
+            <h2>
+                What we do?
+            </h2>
+            <div class="child_bottom_cont">
+                <p>At Eightplanes, we specialize in pioneering
+                     advancements in robotics and providing top-tier
+                      educational courses. We design and manufacture 
+                      cutting-edge robotic systems for various industries, 
+                      enhancing efficiency and innovation. Additionally, we 
+                      offer comprehensive courses for all skill levels, 
+                      equipping individuals with practical skills and 
+                      theoretical knowledge in robotics. By merging technological innovation with educational excellence, we shape the future of robotics and empower 
+                    the next generation of industry experts.
+                </p>
+            </div>
+        </div>
+        <div class="achieve">
+            <div>
+                <h1>1000<span style="color: #00CD82;">+</span></h1>
+                <p>Students Trained</p>
+            </div>
+            <div>
+                <h1>50<span style="color: #00CD82;">+</span></h1>
+                <p>Batches Completed</p>
+            </div>
+            <div>
+                <h1>10<span style="color: #00CD82;">+</span></h1>
+                <p>Projects Completed</p>
+            </div>
+            <div>
+                <h1>1</h1>
+                <p>Patent Applied</p>
+            </div>
+        </div>
+        <div class="our_mission">
+            <div class="mis_content">
+                <h1>Our Mission</h1>
+                <P>
+                    At Eightplanes, our mission is to drive 
+                    technological innovation and empower 
+                    individuals through education. We are committed 
+                    to developing advanced robotic systems that 
+                    revolutionize industries and improve efficiency.
+                    
+                </P>
+
+                <P>
+                    Simultaneously, we strive to provide comprehensive, accessible educational 
+                    courses that equip people with the
+                     skills and knowledge needed to excel in 
+                     the dynamic field of robotics. By combining cutting-edge technology with exceptional training, we aim to shape a future where robotics enhances everyday life and fosters a community of skilled professionals ready to lead the way.
+                </P>
+            </div>
+            <div class="mis_image">
 
             </div>
-            <p class="mlstone">Project completed</p>
-          </div>
+        </div>
+        <div class="story">
+            <h1>The Story And Value Behind Our Company</h1>
+            <div class="cards">
+                <div class="card_in">
+                    <div class="card_content">
 
-          <div class="patents">
-            <div class="patentsCompleted">
-              <p>1</p>
-            </div>
-            <p class="mlstone">Patents applied</p>
-          </div>
-        </div>
-      </div>
-      <div class="projectpage">
-        <div class="projectsections" id="projectsections1">
-          <h1>Our Projects</h1>
-        </div>
-        <div class="projectContainers">
-          <div class="projectContainer">
-            <div class="project1">
-              <img src="assets/project_robotCleaning.png" />
-              <h3>
-                Robotic Farm Cleaning <span>Equitment</span>
-              </h3>
-              <p>
-                The "Robotic Farm Cleaning Equipment" project, specifically
-                tailored for Indian cattle farms, represents a pioneering
-                initiative funded by the Agriculture Department of the district
-                government.
-              </p>
-            </div>
-            <div class="project2">
-              <img src="assets/winfo.png" />
-              <h3>
-                Eightplanes <span>WINFO</span>
-              </h3>
-              <p>
-                It has real-time monitoring capabilities ensure prompt detection
-                of any deviations in pressure, turbidity, and pH levels,
-                allowing for timely interventions to maintain water safety
-              </p>
-            </div>
-            <div class="project3">
-              <img src="assets/rover.png" />
-              <h3>
-                Autonomous <span>rover</span>
-              </h3>
-              <p>
-                Eightplanes Solutions Private Limited, in collaboration with
-                Deepflow Technologies Pvt Ltd, spearheads the development of an
-                autonomous four-wheel-drive rover equipped with 3D LiDAR
-                technology for rubber tapping applications.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="servicesPage">
-        <div class="service">
-          <h1>Our Services</h1>
-        </div>
-        <div class="serviceContainer">
-          <div class="services">
-            <div class="service1">
-              <img src="assets/otherservices.png" alt="" />
-              <h3>Consultancy</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laborum, eos libero unde doloremque accusamus cumque facilis
-                optio ea itaque eum alias quas ratione, illum officia. Cumque at
-                iure odit ex.
-              </p>
-            </div>
-            <div class="service2">
-              <img src="assets/otherservices2.png" alt="" />
-              <h3>Training</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
-                odio magnam modi minima aliquid! Suscipit vero porro dolore, rem
-                in, velit nam, at natus modi ullam magnam placeat nemo
-                distinctio!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="MomentsPage">
-        <div class="moments">
-          <h1>
-            Big <span>Moments</span>
-          </h1>
-        </div>
-        <div class="momentsContainer">
-          <div class="momentsLeftSide">
-            <div class="inaugurationContent">
-              <h1>Inauguration</h1>
-              <p>
-                The inauguration ceremony was graced by the esteemed Hon.
-                Speaker, A N Shamseer of the Kerala Legislative Assembly. His
-                esteemed presence and inspiring words have marked a monumental
-                beginning for our venture.
-              </p>
-            </div>
-          </div>
-          <div class="momentsRightSide">
-            <img src="assets/inauguration.png" alt="" />
-          </div>
-        </div>
-        <div class="momentsContainer">
-          <div class="momentsLeftSide">
-            <img src="assets/training.png" alt="" />
-          </div>
-          <div class="momentsRightSide1">
-            <div class="inaugurationContent">
-              <h1>Moments From Training</h1>
-              <p>
-                The inauguration ceremony was graced by the esteemed Hon.
-                Speaker, A N Shamseer of the Kerala Legislative Assembly. His
-                esteemed presence and inspiring words have marked a monumental
-                beginning for our venture.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="clientPage">
-        <div class="clientHeading">
-          <h1>
-            Our <span>Clients</span>
-          </h1>
-        </div>
-        <div class="clientContainer">
-          <div class="clients">
-            <div class="client1">
-              <img src="assets/imiot.png" />
-            </div>
-            <div class="client2">
-              <img src="assets/x.png" alt="" />
-            </div>
-            <div class="client3">
-              <img src="assets/deLead.png" />
-            </div>
-            <div class="client4">
-              <img src="assets/deepflow.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="affiliatePage">
-        <div class="affiliateHeading">
-          <h1>
-            Our <span>Affiliates</span>
-          </h1>
-        </div>
-        <div class="affiliateContainer">
-          <div class="affiliates">
-            <div class="affiliate1">
-              <img src="assets/govtofIndia.png" alt="" />
-            </div>
-            <div class="affiliate2">
-              <img src="assets/startupindia.png" alt="" />
-            </div>
-            <div class="affiliate3">
-              <img src="assets/startupMission.png" alt="" />
-            </div>
-            <div class="affiliate4">
-              <img src="assets/tbi.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="contactusPage" id="contactpage">
-        <div class="contactus">
-          <h1>Get in touch today!</h1>
-        </div>
-        <div class="contactusContainer">
-          <div class="email">
-            <div class="mailicon">
-              <img src="assets/Icon.svg" alt="" />
-              <p>Mail us</p>
-            </div>
-            <div class="mailus">adsfdsf@gmail.com</div>
-          </div>
-          <div class="contactnumber">
-            <div class="callicon">
-              <img src="assets/call.png" alt="" />
-              <p>Call us</p>
-            </div>
-            <div class="callus">2452452456</div>
-          </div>
-        </div>
-      </div>
-    <!--Footer-->
-    <div class="footerPage">
-        <div class="footercontainer">
-          <div class="footerleft">
-            <img src="assets/logo.png" />
-            <p>Eightplanes Solutions PVT. LTD.</p>
-            <p>Technology Business Incubator</p>
-            <p>College of engineering Thalassery</p>
-            <p>Eranholi PO-670107, Thalassery, Kannur Dist.</p>
-            <p>Mail to: eightplanes.info@gmail.com</p>
-            <p>Call to: 8606063804</p>
-          </div>
-          <div class="footerright">
-            <p>Eightplanes Solutions PVT. LTD.</p>
-            <p>CIN NO: U72100KL2024PTC086818</p>
-            <p>GSTIN:  32AAICE0960G1ZY</p>
-          </div>
-        </div>
-      </div>
+                    
+                        <div class="a">
 
-<script src="script.js"></script>
+                        </div>
+                        
+                        <div class="para">
+                            <h2>Innovation</h2>
+                            <p>
+
+                                Eightplanes innovates by integrating AI and machine learning into robotics, solving real-world challenges through expert collaboration, and setting new industry standards
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card_content">
+
+                    
+                        <div class="b">
+
+                        </div>
+                        
+                        <div class="para">
+                            <h2>Teamwork</h2>
+                            <p>
+                                Eightplanes excels in teamwork through strong collaboration, leveraging diverse expertise to achieve common goals. Our unified approach fosters innovation, ensures effective problem-solving, and drives collective success.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_in">
+                    <div class="card_content">
+
+                    
+                        <div class="c">
+
+                        </div>
+                        
+                        <div class="para">
+                            <h2>Exellency</h2>
+                            <p>
+
+                                Eightplanes excels in excellence by maintaining high standards, continuously improving our processes, and delivering superior products and services. Our commitment to quality ensures we consistently exceed expectations and lead the industry
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card_content">
+
+                    
+                        <div class="d">
+
+                        </div>
+                        
+                        <div class="para">
+                            <h2>Responsibility</h2>
+                            <p>
+
+                                Eightplanes excels in responsibility by prioritizing ethical practices, sustainability, and community impact. We ensure our actions reflect our commitment to social and environmental stewardship, driving positive change in all our endeavors
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="jobs">
+            <div class="title">
+                <h1>Join Eightplanes Lets Work Together</h1>
+            </div>
+            <div class="job">
+                <div class="job_card">
+                    <h2>Web designer and Dev</h2>
+                    <div class="pg">
+                        <p>
+                            interdum ullamcorper sed pharetra sene.
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit 
+                            interdum ullamcorper sed pharetra sene.
+                        </p>
+                    </div>
+                    <button class="btn">Apply Now</button>
+                </div>
+                <div class="job_card">
+                    <h2>Web designer and Dev</h2>
+                    <div class="pg">
+                        <p>
+                            interdum ullamcorper sed pharetra sene.
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit 
+                            interdum ullamcorper sed pharetra sene.
+                        </p>
+                    </div>
+                    <button class="btn">Apply Now</button>
+                </div>
+                <div class="job_card">
+                    <h2>Web designer and Dev</h2>
+                    <div class="pg">
+                        <p>
+                            interdum ullamcorper sed pharetra sene.
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit 
+                            interdum ullamcorper sed pharetra sene.
+                        </p>
+                    </div>
+                    <button class="btn">Apply Now</button>
+                </div>
+                <div class="green_card">
+                    <h2>Cant Find Job You Are Looking For?</h2>
+                    <div class="pg">
+                        <p>
+                            dont worry be in touch with us, we are always looking for team members join us
+                        </p>
+                    </div>
+
+                    <button class="btn_grn">Apply Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="prim">
+                <div class="eplogo">
+
+                </div>
+                <div class="address">
+                    <p> Eightplanes Solutions PVT. LTD.
+                        Technology Business Incubator
+                        College of engineering Thalassery
+                        Eranholi PO-670107, Thalassery, Kannur Dist.
+                        Mail to: eightplanes.info@gmail.com
+                        Call to: 8606063804
+                    </p>
+                </div>
+            </div>
+            <div class="numbers">
+                <p> Eightplanes Solutions PVT. LTD.
+
+                CIN NO: U72100KL2024PTC086818
+                GSTIN:  32AAICE0960G1ZY
+                </p>
+            </div>
+        </div>
+        <div class="social">
+            <div class="insta">
+            </div>
+            <div class="link">
+
+            </div>
+            <div class="face">
+
+            </div>
+            <div class="twit">
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
