@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const counters = document.querySelectorAll('.value');
 const speed = 200;
 
@@ -49,3 +50,5 @@ var swiper = new Swiper(".slide-content", {
   },
 });
 
+=======
+>>>>>>> 2477bc645de1fad821afeecebea71344038bd3d7
