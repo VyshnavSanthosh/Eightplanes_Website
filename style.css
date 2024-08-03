@@ -642,6 +642,9 @@
     top: 30%;
   }
 
+  .projectContainers {
+    margin-left: 1.8rem;
+  }
   .value {
     font-size: 2rem;
     font-weight: 700;
@@ -666,7 +669,7 @@
     width: 90%;
   }
   .milestoneContainer {
-    gap: 3rem;
+    gap: 4.9rem;
     flex-direction: row;
     margin-top: 30rem;
     justify-content: center;
@@ -782,7 +785,7 @@
     font-size: 0.8rem;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .affiliateHeading h1 {
     font-size: 2.3rem;
   }
@@ -791,6 +794,9 @@
   }
   .footercontainer p {
     font-size: 0.1rem;
+  }
+  .projectContainers {
+    margin-left: -1rem;
   }
 }
 @media (max-width: 550px) {
