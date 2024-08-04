@@ -18,7 +18,7 @@ body {
   border-radius: 30px;
   margin-right: 6rem;
 }
-.navbar-links a {
+a {
   text-decoration: none;
   color: black;
   font-family: "Nunito", sans-serif;
@@ -38,7 +38,7 @@ body {
   height: 0px;
   font-size: 0.7rem;
   text-align: right;
-  width: 320px;
+  width: 100%;
   background: rgba(80, 80, 80, 0.2);
   overflow: hidden;
   backdrop-filter: blur(5px);
@@ -554,7 +554,7 @@ button {
   .dropdown_menu{
     display: block;
     top : 85px;
-    width: 33.438rem;
+    width: 100%;
   }
   .eplogo .logo{
     margin-left: 2rem;
@@ -566,7 +566,7 @@ button {
     justify-content: space-between;
     padding: 2rem;
   }
-  .nav .list{
+  .nav .navbar-links{
     display: none;
   }
   .nav .toggle_btn{
@@ -645,7 +645,7 @@ button {
   .dropdown_menu{
     right: 20px;
     display: block;
-    width: 20rem;
+    width: 100%;
   }
   .main .first_h{
     font-size: 2.5rem;
