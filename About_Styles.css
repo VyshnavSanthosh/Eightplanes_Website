@@ -566,7 +566,7 @@ button {
     justify-content: space-between;
     padding: 2rem;
   }
-  .nav .list{
+  .nav .navbar-links{
     display: none;
   }
   .nav .toggle_btn{
