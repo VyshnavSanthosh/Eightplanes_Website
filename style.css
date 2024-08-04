@@ -314,6 +314,7 @@ html {
   color: #16eb9d;
 }
 .slide-container {
+  border-radius : 10px;
   max-width: 1000px;
   width: 100%;
   padding: 40px 0;
