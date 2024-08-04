@@ -363,6 +363,7 @@ html {
 }
 
 .card-image {
+  border-radius : 10px;
   position: relative;
   height: auto;
   width: 100%;
@@ -370,6 +371,7 @@ html {
   object-fit: cover;
 }
 .card-image .card-img {
+  border-radius : 10px;
   height: auto;
   width: 100%;
 }
