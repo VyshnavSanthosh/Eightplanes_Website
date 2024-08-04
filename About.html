@@ -9,7 +9,7 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="stylesAbout.css" />
+    <link rel="stylesheet" href="About_Styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -17,26 +17,26 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Document</title>
+    <title>About Us</title>
   </head>
   <body>
     <div class="circle"></div>
     <div class="circle_2"></div>
     <div class="nav">
       <div class="eplogo">
-        <img src="" alt="" class="logo" />
+        <img src="Group 37271.png" alt="" class="logo" />
       </div>
-      <div class="list">
-        <a href="index.html">Home</a>
-        <a href="#">About Us</a>
-        <a href="index.html">Projects</a>
-        <a href="index.html">Contact Us</a>
+      <div class="navbar-links">
+        <a href="#">Home</a>
+        <a href="#projectsections1">Projects</a>
+        <a href="About.html">About Us</a>
+        <a href="#contactpage">Contact</a>
       </div>
       <div class="toggle_btn">
         <i class="fa-solid fa-bars"></i>
       </div>
     </div>
-    <div class="dropdown_menu">
+    <div class="dropdown_menu open">
       <ul>
         <li>Home</li>
         <li>About Us</li>
@@ -45,21 +45,21 @@
       </ul>
     </div>
     <script>
-      const toggleBtn = document.querySelector(".toggle_btn");
-      const toggleBtnIcon = document.querySelector(".toggle_btn i");
-      const DropDownMenu = document.querySelector(".dropdown_menu");
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+      const DropDownMenu = document.querySelector('.dropdown_menu')
 
-      toggleBtn.onclick = function () {
-        DropDownMenu.classList.toggle("open");
-        const isOpen = DropDownMenu.classList.contains("open");
+      toggleBtn.onclick = function(){
+          DropDownMenu.classList.toggle('open')
+          const isOpen = DropDownMenu.classList.contains('open')
 
-        toggleBtnIcon.classList = isOpen
-          ? "fa-solid fa-xmark"
-          : "fa-solid fa-bars";
-      };
-    </script>
+          toggleBtnIcon.classList = isOpen
+              ? 'fa-solid fa-xmark'
+              : 'fa-solid fa-bars'
+      }
+  </script>
     <div class="main">
-      <h1>About Our Company</h1>
+      <h1 class="first_h">About Our Company</h1>
       <p class="about_p">
         We are an innovative company specializing in the development of advanced
         robotics and educational courses. They design and manufacture
@@ -67,8 +67,8 @@
         from manufacturing to healthcare.
       </p>
       <div class="imgs">
-        <div class="img_1"></div>
-        <div class="img_2"></div>
+        <img src="Photo.jpg" class="img_1" alt="" />
+        <img src="Photo_2.jpg" class="img_1" alt="" />
       </div>
       <div class="bottom_content">
         <h2>What we do?</h2>
@@ -123,14 +123,14 @@
             of skilled professionals ready to lead the way.
           </p>
         </div>
-        <div class="mis_image"></div>
+        <img src="Mission-Ph.jpg" class="mis_image" alt="" />
       </div>
       <div class="story">
         <h1>The Story And Value Behind Our Company</h1>
         <div class="cards">
           <div class="card_in">
             <div class="card_content">
-              <div class="a"></div>
+              <div class="card-a"><img src="Bulb.png" alt="" /></div>
 
               <div class="para">
                 <h2>Innovation</h2>
@@ -142,7 +142,7 @@
               </div>
             </div>
             <div class="card_content">
-              <div class="b"></div>
+              <div class="card-a"><img src="team.png" alt="" /></div>
 
               <div class="para">
                 <h2>Teamwork</h2>
@@ -157,7 +157,7 @@
           </div>
           <div class="card_in">
             <div class="card_content">
-              <div class="c"></div>
+              <div class="card-a"><img src="Badge.png" alt="" /></div>
 
               <div class="para">
                 <h2>Exellency</h2>
@@ -171,7 +171,7 @@
               </div>
             </div>
             <div class="card_content">
-              <div class="d"></div>
+              <div class="card-a"><img src="Responsibility.png" alt="" /></div>
 
               <div class="para">
                 <h2>Responsibility</h2>
@@ -239,7 +239,7 @@
       </div>
       <div class="footer">
         <div class="prim">
-          <div class="eplogo"></div>
+          <div class="logo"><img src="/Group 37271.png" alt=""></div>
           <div class="address">
             <p>
               Eightplanes Solutions PVT. LTD. Technology Business Incubator
@@ -257,10 +257,10 @@
         </div>
       </div>
       <div class="social">
-        <div class="insta"></div>
-        <div class="link"></div>
-        <div class="face"></div>
-        <div class="twit"></div>
+        <div class="insta"><img src="insta.png" alt="" /></div>
+        <div class="link"><img src="link.png" alt="" /></div>
+        <div class="face"><img src="face.png" alt="" /></div>
+        <div class="twit"><img src="twitter.png" alt="" /></div>
       </div>
     </div>
   </body>
