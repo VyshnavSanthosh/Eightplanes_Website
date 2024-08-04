@@ -75,6 +75,7 @@
 body {
   margin: 0;
   padding: 0;
+  width: 93%;
   font-family: "Nunito", sans-serif;
   overflow-x: hidden;
 }
@@ -238,8 +239,8 @@ html {
   justify-content: space-around;
   gap: 3rem;
   text-align: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 3rem;
+  padding-right: 0rem;
 }
 .projectContainer span {
   color: #16eb9d;
@@ -299,6 +300,7 @@ html {
   margin-top: 6rem;
   min-height: 20vh;
   background-color: #fff;
+  padding-left: 2rem;
 }
 .service {
   display: flex;
@@ -700,14 +702,17 @@ html {
 }
 @media (max-width: 920px) {
   .navbar .toggle_btn {
-    margin-right: 3rem;
+    margin-right: -1rem;
     color: black;
     cursor: pointer;
     font-size: 1rem;
     display: block;
   }
   .toggle_btn {
-    margin-top: 1rem;
+    margin-top: 0.4rem;
+  }
+  .toggle_btn i {
+    font-size: 30px;
   }
   .navbar .navbar-links {
     display: none;
@@ -804,7 +809,7 @@ html {
 
   .momentsRightSide img {
     height: auto;
-    width: 100%;
+    width: 95%;
   }
   .momentsleftSide img {
     height: auto;
@@ -868,11 +873,25 @@ html {
     font-size: 6.5rem;
     top: 25%;
   }
+  .momentsRightSide img {
+    height: auto;
+    width: 90%;
+  }
 }
 @media (max-width: 650px) {
   .main {
     font-size: 5.5rem;
     top: 27%;
+  }
+  .momentsRightSide {
+    height: auto;
+    width: 70%;
+  }
+  .toggle_btn {
+    margin-top: 0.7rem;
+  }
+  .milestoneContainer {
+    margin-top: 18rem;
   }
 }
 @media (max-width: 550px) {
@@ -883,7 +902,7 @@ html {
     flex-direction: column;
   }
   .toggle_btn {
-    margin-top: 1rem;
+    margin-top: 0.9rem;
     margin-right: -2rem;
   }
   .navbar-brand {
@@ -895,7 +914,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
-    top: 46%;
+    top: 66%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -913,17 +932,24 @@ html {
   .mailp {
     font-size: 0.9rem;
   }
+  .footerleft p {
+    line-height: 0.3rem;
+  }
   .mailus {
     font-size: 0.6rem;
   }
   .callus {
     font-size: 0.6rem;
   }
+  .toggle_btn {
+    margin-top: 0.2rem;
+  }
 }
 @media (max-width: 451px) {
   .navbar-brand {
     margin-left: -3rem;
   }
+
   .navbar .toggle_btn {
     margin-right: 3rem;
     color: black;
@@ -944,8 +970,7 @@ html {
     top: 30%;
   }
   .toggle_btn {
-    margin-top: 1rem;
-    margin-right: -7rem;
+    margin-top: 0.6rem;
   }
   .projectContainers {
     margin-left: 1.8rem;
@@ -977,7 +1002,7 @@ html {
   .milestoneContainer {
     gap: 4.9rem;
     flex-direction: row;
-    margin-top: 30rem;
+    margin-top: 24rem;
     justify-content: center;
   }
   .heroimgTxt1 p {
@@ -1000,7 +1025,7 @@ html {
   .projectContainer {
     display: flex;
     flex-direction: column;
-    margin-right: 0;
+    margin-right: 2rem;
     margin-left: -2rem;
   }
 
@@ -1009,7 +1034,7 @@ html {
   }
 
   .background {
-    top: 45%;
+    top: 54%;
     background-image: url(assets/resp.png);
     background-size: auto;
     background-repeat: no-repeat;
@@ -1098,6 +1123,9 @@ html {
   .callus {
     font-size: 0.8rem;
   }
+  .navbar .toggle_btn {
+    margin-right: -1rem;
+  }
 }
 @media (max-width: 400px) {
   .affiliateHeading h1 {
@@ -1139,6 +1167,9 @@ html {
   }
   .callus {
     font-size: 0.5rem;
+  }
+  .footercontainer p {
+    font-size: 0.4rem;
   }
 }
 
