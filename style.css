@@ -1034,11 +1034,7 @@ html {
   }
 
   .background {
-<<<<<<< HEAD
-    top: 54%;
-=======
-    top: 64%;
->>>>>>> 84c4a63417cb5156398dd4e5d8b4c3d1e2111e9a
+    top: 41%;
     background-image: url(assets/resp.png);
     background-size: auto;
     background-repeat: no-repeat;
@@ -1174,6 +1170,21 @@ html {
   }
   .footercontainer p {
     font-size: 0.4rem;
+  }
+  .background {
+    top: 49%;
+    background-image: url(assets/resp.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  .service h1 {
+    font-size: 2.8rem;
+  }
+  .projectsections h1 {
+    font-size: 2.7rem;
+  }
+  .moments h1 {
+    font-size: 2.6rem;
   }
 }
 
