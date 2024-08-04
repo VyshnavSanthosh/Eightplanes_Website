@@ -28,8 +28,9 @@
 .dropdown_menu {
   display: none;
   position: absolute;
-  right: 1rem;
-  top: 39px;
+  right: 0rem;
+  top: 60px;
+  z-index: 3;
   height: 0px;
   font-size: 0.9rem;
   text-align: right;
@@ -70,11 +71,16 @@
   height: 40px;
 }
 /* heroPage*/
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Nunito", sans-serif;
   overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+  width: 100vw;
 }
 .HeroPage {
   width: 100vw;
@@ -88,7 +94,7 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 27%;
+  top: 12%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -105,7 +111,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   background-image: url(assets/We\ Design.png);
-  background-size: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .heroImg {
@@ -159,12 +166,10 @@ body {
 }
 .traininghrs {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
 }
-.training {
-  text-align: center;
-}
+
 .value {
   font-size: 4rem;
   font-weight: 800;
@@ -232,10 +237,9 @@ body {
   display: flex;
   justify-content: space-around;
   gap: 3rem;
-  width: 25%;
-  margin: 1rem;
-  width: 80%;
   text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .projectContainer span {
   color: #16eb9d;
@@ -243,10 +247,9 @@ body {
 .projectContainers {
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
 }
 .projectContainers img {
-  margin-left: 2rem;
 }
 .project1 p {
   margin-top: 1rem;
@@ -258,36 +261,36 @@ body {
   margin-top: 1rem;
 }
 .project1 img {
-  height: 150px;
-  width: 200px;
+  height: auto;
+  width: 100%;
   margin-bottom: 2rem;
 }
 .project2 img {
-  height: 150px;
-  width: 200px;
+  height: auto;
+  width: 100%;
   margin-bottom: 2rem;
   margin-top: -2.4rem;
 }
 .project3 img {
-  height: 150px;
-  width: 200px;
+  height: auto;
+  width: 100%;
   margin-bottom: 2rem;
 }
 
 .project1 {
-  width: 18rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .project2 {
-  width: 18rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .project3 {
-  width: 18rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -312,9 +315,11 @@ body {
   max-width: 1000px;
   width: 100%;
   padding: 40px 0;
+  display: flex;
+  justify-content: center;
 }
 .slide-content {
-  margin: 0 40px;
+  width: 80%;
   overflow: hidden;
   border-radius: 25px;
 }
@@ -635,7 +640,6 @@ body {
   display: flex;
   justify-content: space-between;
   width: 90%;
-  padding: 2rem;
 }
 .footerPage {
   width: 100vw;
@@ -644,6 +648,7 @@ body {
 .footerleft {
   width: 50%;
   height: 10rem;
+  padding-left: 1rem;
 }
 .footerleft img {
   height: 25%;
@@ -660,14 +665,38 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: end;
+  margin-top: 1.4rem;
 }
 
 .footerright p {
   font-size: 0.75rem;
-  line-height: 2rem;
   display: flex;
   flex-direction: column;
   text-align: left;
+}
+@media (max-width: 1110px) {
+  .main {
+    top: 19%;
+  }
+  .heroimgTxt2 p,
+  .heroimgTxt1 p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1250px) {
+  .main {
+    top: 25%;
+  }
+}
+@media (max-width: 1350px) {
+  .main {
+    top: 25%;
+  }
+}
+@media (max-width: 1200px) {
+  .main {
+    top: 25%;
+  }
 }
 @media (max-width: 920px) {
   .navbar .toggle_btn {
@@ -683,13 +712,14 @@ body {
   .navbar .navbar-links {
     display: none;
   }
+
   .dropdown_menu {
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .main {
-    top: 30%;
+    top: 20%;
   }
 
   .milestoneContainermain {
@@ -700,11 +730,12 @@ body {
     gap: 3rem;
     flex-direction: row;
     margin-top: 40rem;
-
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     justify-content: center;
   }
   .heroImg {
-    top: 50%;
+    top: 70%;
   }
   .heroimgTxt1 p {
     font-size: 0.6rem;
@@ -719,7 +750,7 @@ body {
     display: none;
   }
   .project2 img {
-    margin-top: 1rem;
+    margin-top: -4rem;
   }
   .project2 {
     margin-top: 1rem;
@@ -734,7 +765,7 @@ body {
   }
 
   .background {
-    top: 45%;
+    top: 65%;
   }
   .service1 {
     width: 100%;
@@ -832,8 +863,64 @@ body {
     font-size: 1.2rem;
   }
 }
-
-@media (max-width: 450px) {
+@media (max-width: 800px) {
+  .main {
+    font-size: 6.5rem;
+    top: 25%;
+  }
+}
+@media (max-width: 650px) {
+  .main {
+    font-size: 5.5rem;
+    top: 27%;
+  }
+}
+@media (max-width: 550px) {
+  .footercontainer p {
+    font-size: 0.5rem;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .toggle_btn {
+    margin-top: 1rem;
+    margin-right: -2rem;
+  }
+  .navbar-brand {
+    margin-left: -3rem;
+  }
+  .background {
+    background-image: url(assets/resp.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .heroimgTxt1,
+  .heroimgTxt2,
+  .main,
+  .heroImg {
+    display: none;
+  }
+  .momentsleftSide img {
+    height: 28rem;
+  }
+}
+@media (max-width: 500px) {
+  .mailp {
+    font-size: 0.9rem;
+  }
+  .mailus {
+    font-size: 0.6rem;
+  }
+  .callus {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 451px) {
   .navbar-brand {
     margin-left: -3rem;
   }
@@ -913,6 +1000,8 @@ body {
   .projectContainer {
     display: flex;
     flex-direction: column;
+    margin-right: 0;
+    margin-left: -2rem;
   }
 
   .services {
@@ -1010,7 +1099,7 @@ body {
     font-size: 0.8rem;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 400px) {
   .affiliateHeading h1 {
     font-size: 2.3rem;
   }
@@ -1023,38 +1112,57 @@ body {
   .projectContainers {
     margin-left: -1rem;
   }
-}
-@media (max-width: 550px) {
-  .footercontainer p {
+  .projectContainer {
+    margin-right: 0;
+    margin-left: 2rem;
+  }
+  .mailicon {
+    height: 70px;
+    width: 190px;
+    gap: 0.2;
+  }
+  .callicon {
+    height: 70px;
+    width: 190px;
+    gap: 0.2;
+  }
+  .callicon img,
+  .mailicon img {
+    width: 60px;
+    height: 60px;
+  }
+  .mailp {
+    font-size: 0.9rem;
+  }
+  .mailus {
     font-size: 0.5rem;
   }
-  .main {
-    flex-direction: column;
+  .callus {
+    font-size: 0.5rem;
   }
-  .toggle_btn {
-    margin-top: 1rem;
-    margin-right: -2rem;
+}
+
+@media (max-width: 350px) {
+  .mailus,
+  .callus {
+    font-size: 0.4rem;
   }
-  .navbar-brand {
-    margin-left: -3rem;
+  .mailicon {
+    height: 70px;
+    width: 190px;
+    gap: 0.2;
   }
-  .background {
-    background-image: url(assets/resp.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 46%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .callicon {
+    height: 70px;
+    width: 190px;
+    gap: 0.2;
   }
-  .heroimgTxt1,
-  .heroimgTxt2,
-  .main,
-  .heroImg {
-    display: none;
+  .callicon img,
+  .mailicon img {
+    width: 60px;
+    height: 60px;
   }
-  .momentsleftSide img {
-    height: 28rem;
+  .mailp {
+    font-size: 0.9rem;
   }
 }
