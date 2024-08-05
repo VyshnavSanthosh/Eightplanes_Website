@@ -13,7 +13,7 @@ setTimeout(() => {
         counter.innerText = Math.ceil(data + time);
         setTimeout(animate, 5);
       } else {
-        counter.innerText = value;
+        counter.innerText = value +"+";
       }
     };
 
