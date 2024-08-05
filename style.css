@@ -472,6 +472,7 @@ html {
 }
 .inaugurationContent {
   width: 75%;
+  text-align: center;
 }
 .inaugurationContent h1 {
   font-size: 3rem;
