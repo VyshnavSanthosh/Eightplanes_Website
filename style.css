@@ -105,11 +105,11 @@ html {
 .background {
   overflow-x: hidden;
   overflow-y: hidden;
-  height: 25rem;
+  height: 40rem;
   width: 100vw;
   margin-top: 8rem;
   background-image: url(assets/We\ Design.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .background2 {
@@ -710,6 +710,38 @@ html {
   flex-direction: column;
   text-align: left;
 }
+.social {
+  align-items: center;
+  justify-content: center;
+  width:100vw;
+  height: fit-content;
+  display: flex;
+  flex-flow: row;
+}
+.insta {
+  overflow-y: hidden;
+  margin: 2rem;
+  width: 1.047rem;
+  height: 1.047rem;
+}
+.link {
+  overflow-y: hidden;
+  margin: 2rem;
+  width: 1.047rem;
+  height: 1.047rem;
+}
+.face {
+  overflow-y: hidden;
+  margin: 2rem;
+  width: 1.047rem;
+  height: 1.047rem;
+}
+.twit {
+  overflow-y: hidden;
+  margin: 2rem;
+  width: 1.047rem;
+  height: 1.047rem;
+}
 
 @media (max-width: 1250px) {
   .main {
@@ -987,13 +1019,13 @@ html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(assets/We\ Designresp.png);
+    background-image: url(/assets/Robot_We_train.png);
   }
   .background3 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(assets/We\ Designresp.png);
+    background-image: url(/assets/We_Build_.png);
   }
   .momentsleftSide img {
     height: 28rem;

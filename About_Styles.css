@@ -467,6 +467,7 @@ button {
   height: 1.047rem;
 }
 .twit {
+  overflow-x: hidden;
   overflow-y: hidden;
   margin: 2rem;
   width: 1.047rem;
